@@ -18,5 +18,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('test/', include('auth_firebase.urls')),
+    path('users/', include('auth_firebase.urls')),
+    path('surveyresponses/', include('surveyresponses.urls')), 
+    path('basket2/', include('basket2.urls')),
+    path('product/', include('product.urls')),
+
 ]
